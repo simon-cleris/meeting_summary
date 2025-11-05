@@ -1,0 +1,20 @@
+# ALBERT API KEY
+albertai:
+# TODO API key used to authenticate requests to the model
+  api_key: "YOUR-KEY sk...."
+  base_url: "https://albert.api.etalab.gouv.fr/v1"
+
+files:
+  template: "input/template.md"
+  output: "output/meeting_summary.txt"
+  audio_file: "input/YOUR-AUDIO-FILE" 
+
+  # --- Configuration for WhisperX diarization and transcription ---
+whisperx:
+  device: "cpu"              # or "cuda" if you have a GPU
+  # TODO : Hugging Face authentication token (required for diarization models)
+  hf_token: "YOUR-KEY hf...."
+  output: "output/meeting_diarized.txt"
+  model_size: "medium"       # tiny / base / small / medium / large
+  language: "fr"
+  test_duration: 60          # Duration in seconds for test mode
