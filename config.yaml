@@ -15,6 +15,6 @@ whisperx:
   # TODO : Hugging Face authentication token (required for diarization models)
   hf_token: "YOUR-KEY hf...."
   output: "output/meeting_diarized.txt"
-  model_size: "medium"       # tiny / base / small / medium / large
+  model_size: "large"       # tiny / base / small / medium / large
   language: "fr"
   test_duration: 60          # Duration in seconds for test mode
